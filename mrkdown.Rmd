@@ -17,4 +17,9 @@ library("tidyverse")
 ggplot(Awonderfullimpet, aes(x = DENSITY, y = EGGS, colour = SEASON))+
   geom_point()
 
+ggplot(Awonderfullimpet, aes(x = SEASON, y = EGGS, fill = SEASON))+
+  geom_boxplot()+
+  theme_classic()
+
+
 ```
