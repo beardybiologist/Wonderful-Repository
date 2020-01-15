@@ -1,0 +1,17 @@
+---
+title: "A Wonderful Markdown"
+author: "A Wonderful Author"
+date: "15/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+Awonderfullimpet<-read.csv("limpet.csv")
+
+ggplot(Awonderfullimpet, aes(x = DENSITY, y = EGGS, colour = SEASON))+
+  
